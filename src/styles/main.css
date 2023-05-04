@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.diceWrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem;
+  justify-items: center;
+  align-items: center;
+  margin: 1rem;
+}
+
+.diceWrapper:nth-child(even) {
+  justify-self: end;
+}
