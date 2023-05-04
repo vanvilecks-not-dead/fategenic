@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-.diceWrapper {
+.dice-wrapper {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 1rem;
@@ -11,6 +11,6 @@
   margin: 1rem;
 }
 
-.diceWrapper:nth-child(even) {
+.dice-wrapper:nth-child(even) {
   justify-self: end;
 }

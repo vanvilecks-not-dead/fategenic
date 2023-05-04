@@ -31,19 +31,20 @@ module.exports = {
       green: '#13839C',
       red: '#5A0F0F',
       'win-green': '#139C9C',
-      'light-green': '#C6DCEB',
-      'deep-blue': '#062B33',
+      'light-green': 'rgba(19, 131, 156, 0.2)',
+      'deep-green': '#062B33',
     }),
 
     extend: {
+      spacing: {
+        30: '122px',
+        34: '140px',
+        38: '155px',
+        42: '174px',
+      },
       fontFamily: {
         sans: ['var(--font-m-plus-1)', ...fontFamily.sans],
       },
-      spacing: {
-        30: '7,625rem', /* 122px */
-        38: '9,6875rem', /* 155px */
-        42: '10,875rem', /*174px */
-      }
     },
   },
   plugins: [],
