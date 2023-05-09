@@ -1,1 +1,1 @@
-export { Dice } from './Dice';
+export { Dice } from "./Dice";

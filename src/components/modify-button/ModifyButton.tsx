@@ -1,45 +1,43 @@
-import PlusIcon from './images/plus.inline.svg'
-import MinusIcon from './images/minus.inline.svg'
+import PlusIcon from "./images/plus.inline.svg";
+import MinusIcon from "./images/minus.inline.svg";
+import { addModifier, downsizeModifier } from "@/store/modifierStore";
 
-const PlusModifierButton = () => {
+const PlusModifierButton = ({ onClick }: { onClick: () => void }) => {
   return (
-    <button className='px-5 bg-light-green rounded-r-3xl'>
-      <PlusIcon width={30} height={30}/>
+    <button className="rounded-r-3xl bg-light-green px-5" onClick={onClick}>
+      <PlusIcon width={30} height={30} />
     </button>
-  )
-}
+  );
+};
 
-
-
-
-const MinusModifierButton = () => {
+const MinusModifierButton = ({ onClick }: { onClick: () => void }) => {
   return (
-    <button className='px-5 bg-light-green rounded-l-3xl'>
-      <MinusIcon width={30} height={30}/>
+    <button className="rounded-l-3xl bg-light-green px-5" onClick={onClick}>
+      <MinusIcon width={30} height={30} />
     </button>
-  )
+  );
+};
 
-
-}
 const TextModifierButton = () => {
   return (
-    <div className='w-34 flex justify-center items-center text-center py-5 px-3 bg-light-green mx-2.5'>
-      <span className='text-base leading-6 text-deep-green font-bold uppercase'>Modify roll</span>
+    <div className="mx-2.5 flex w-34 items-center justify-center bg-light-green px-3 py-5 text-center">
+      <span className="text-base font-bold uppercase leading-6 text-deep-green">
+        Modify roll
+      </span>
     </div>
-  )
-}
-
-
+  );
+};
 
 const ModifyButton = () => {
-    return (
-      <div className='flex justify-center self-center flex-row h-[80px]'>
-        <MinusModifierButton />
+  return (
+    <>
+      <div className="flex h-[80px] flex-row justify-center self-center">
+        <MinusModifierButton onClick={() => downsizeModifier(1)} />
         <TextModifierButton />
-        <PlusModifierButton />
+        <PlusModifierButton onClick={() => addModifier(1)} />
       </div>
-    )
-}
-
+    </>
+  );
+};
 
 export { ModifyButton };
