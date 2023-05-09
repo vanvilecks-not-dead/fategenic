@@ -9,9 +9,25 @@ const font = M_PLUS_1({
 });
 
 export const metadata = {
-  title: "Fategtic",
-  description: "A Fate Core character sheet and dice roller",
-};
+  title: 'Fategenic',
+  description: 'dice roller',
+  icons: {
+    icon: '/favicon/favicon-32x32.png',
+    apple: [
+      { url: '/favicon/favicon-48x48.png', sizes: '48x48', type: 'image/png' },
+      { url: '/favicon/favicon-72x72.png', sizes: '72x72', type: 'image/png' },
+      { url: '/favicon/favicon-96x96.png', sizes: '96x96', type: 'image/png' },
+      { url: '/favicon/favicon-256x256.png', sizes: '256x256', type: 'image/png' },
+      { url: '/favicon/favicon-384x384.png', sizes: '384x384', type: 'image/png' },
+      { url: '/favicon/favicon-512x512.png', sizes: '512x512', type: 'image/png' },
+    ],
+    other: {
+      rel: '/favicon/favicon-32x32.png',
+      url: '/favicon/favicon-32x32.png',
+    },
+  },
+  manifest: '/manifest.webmanifest',
+}
 
 type RootLayoutProps = {
   children: React.ReactNode;
