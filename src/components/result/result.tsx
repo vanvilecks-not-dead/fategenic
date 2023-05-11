@@ -17,7 +17,6 @@ const Result = () => {
     }
   }, [currentRoll, modifierStore]);
 
-  console.log(history, modifierStore);
   return (
     <div className={"text-dark w-[300px] text-center"}>
       <div className="text-[96px] font-bold uppercase">{total}</div>

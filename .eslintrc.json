@@ -42,20 +42,7 @@
         ]
       }
     ],
-
-    "react/no-unstable-nested-components": "warn",
-    "no-plusplus": "warn",
-    "jsx-a11y/control-has-associated-label": "warn",
-    "jsx-a11y/no-static-element-interactions": "warn",
-    "jsx-a11y/click-events-have-key-events": "warn",
-    // defaultProps rule to be deprecated on function components
-    // https://github.com/reactjs/rfcs/pull/107
-    "react/require-default-props": [
-      "error",
-      {
-        "ignoreFunctionalComponents": true
-      }
-    ],
+    "no-plusplus": "off",
     "import/no-extraneous-dependencies": "off",
     "class-methods-use-this": "off",
     "import/prefer-default-export": "off",
@@ -77,5 +64,10 @@
     ],
     "overrides": "off"
   },
-  "ignorePatterns": ["node_modules/", "tailwind.config.js", "postcss.config.js", "next.config.js"]
+  "ignorePatterns": [
+    "node_modules/",
+    "tailwind.config.js",
+    "postcss.config.js",
+    "next.config.js"
+  ]
 }
