@@ -32,13 +32,15 @@ const Dice = () => {
   }, [historyStore, modStore]);
 
   const renderSide = (value: number, key: number): JSX.Element | null => {
+    const css = "w-28 h-28 sm:h-28 sm:w-28 lg:h-34 lg:w-34 xl:h-48 xl:w-48";
+
     switch (value) {
       case -1:
-        return <Minus width={225} height={225} key={key} />;
+        return <Minus className={css} key={key} />;
       case 0:
-        return <Empty width={225} height={225} key={key} />;
+        return <Empty className={css} key={key} />;
       case 1:
-        return <Plus width={225} height={225} key={key} />;
+        return <Plus className={css} key={key} />;
       default:
         return null;
     }

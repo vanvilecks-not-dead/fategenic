@@ -38,7 +38,7 @@ const Result = () => {
     <div
       className={clsx(
         getTextColor(),
-        "min-w-[300px] select-none text-center text-deep-green"
+        "max-w-[300px] select-none text-center  text-deep-green md:min-w-[300px]"
       )}
     >
       <div className="text-[96px] font-bold">{totalMessage}</div>
@@ -46,7 +46,7 @@ const Result = () => {
         {description}
       </span>
 
-      <div className="h-7 pt-4 text-2xl font-normal leading-9">
+      <div className="pt-4 text-2xl font-normal leading-9 lg:h-7">
         {modifierStore !== 0 && <span>modified by {modMessage}</span>}
       </div>
     </div>

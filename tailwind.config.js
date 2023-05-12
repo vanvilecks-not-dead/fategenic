@@ -43,10 +43,17 @@ module.exports = {
         38: "155px",
         42: "174px",
       },
+      boxShadow: {
+        placeholder:
+          "0px 1px 3px rgba(0, 0, 0, 0.08), 0px 1px 2px -1px rgba(0, 0, 0, 0.08)",
+        toggle:
+          "0px 1px 3px rgba(0, 0, 0, 0.08), 0px 1px 2px -1px rgba(0, 0, 0, 0.08)",
+        test: "-1px -1px 104px 11px rgba(170,208,214,1)",
+      },
       fontFamily: {
         sans: ["var(--font-m-plus-1)", ...fontFamily.sans],
       },
     },
   },
-  plugins: [],
+  plugins: [require("tailwind-scrollbar-hide")],
 };

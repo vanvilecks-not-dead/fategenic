@@ -31,7 +31,7 @@ const TextModifierButton = () => {
 const ModifyButton = () => {
   return (
     <>
-      <div className="flex h-[80px] flex-row justify-center self-center">
+      <div className="mt-3 flex h-[80px] flex-row justify-center self-center">
         <MinusModifierButton onClick={() => downsizeModifier(1)} />
         <TextModifierButton />
         <PlusModifierButton onClick={() => addModifier(1)} />

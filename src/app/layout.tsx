@@ -49,7 +49,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="en">
       <body
-        className={`${font.variable} px-safe overflow-hidden px-10 pt-24 font-sans`}
+        className={`${font.variable} px-safe overflow-auto bg-white px-10 pt-24 font-sans lg:overflow-hidden`}
       >
         {children}
       </body>

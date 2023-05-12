@@ -1,6 +1,6 @@
 import { rollFateDice } from "@/shared/rollDice";
 import { $modifierStore } from "@/store/modifierStore";
-import { $history, RolledDice, addRolledDice } from "@/store/store";
+import { RolledDice, addRolledDice } from "@/store/store";
 import { useStore } from "effector-react";
 
 const addRolledDiceWrapper = (values: number[], mod: number): RolledDice => {
@@ -21,7 +21,7 @@ const RollButton = () => {
 
   return (
     <button
-      className="mt-8.5 flex h-20 w-full flex-row items-center justify-center rounded-3xl bg-green text-center"
+      className="mt-8.5 flex h-20 w-48 flex-row items-center justify-center rounded-3xl bg-green text-center sm:w-60 sm:justify-self-center md:w-full"
       type="button"
       onClick={onClickDiceWrapper}
     >

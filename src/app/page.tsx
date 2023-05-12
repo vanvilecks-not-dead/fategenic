@@ -1,6 +1,7 @@
 "use client";
 
 import { Dice } from "@/components/dice";
+import { Graph } from "@/components/distribution-graph";
 import { History } from "@/components/history";
 import { ModifyButton } from "@/components/modify-button";
 import { Result } from "@/components/result";
@@ -8,17 +9,22 @@ import { RollButton } from "@/components/roll-again-button";
 
 export default function Home() {
   return (
-    <div className="flex flex-row gap-x-6">
-      <Dice />
+    <div className="flex flex-col sm:flex-col lg:flex-row lg:justify-between">
+      <div className="flex h-full justify-center sm:items-center sm:justify-center lg:justify-normal">
+        <Dice />
+      </div>
       <div className="flex flex-col">
-        <div className="flex h-min w-full flex-row gap-x-6 border-b-2 border-b-blue2 pb-10">
+        <div className="flex h-min w-full flex-col items-center gap-x-11 border-b-2 border-b-blue2 pb-10 lg:flex-row lg:justify-between">
           <Result />
-          <div>
+          <div className="flex flex-col items-center justify-center">
             <ModifyButton />
             <RollButton />
           </div>
         </div>
-        <History />
+        <div className="flex flex-col justify-between gap-7 md:flex-row">
+          <History />
+          <Graph />
+        </div>
       </div>
     </div>
   );
