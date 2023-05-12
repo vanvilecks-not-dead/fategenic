@@ -21,11 +21,15 @@ const Dice = () => {
   const historyStore = useStore($history);
 
   useEffect(() => {
-    const rolled = rollFateDice(4);
-    setDice(rolled);
+    if (historyStore.length == 0) {
+      const rolled = rollFateDice(4);
+      setDice(rolled);
 
-    addRolledDice(addRolledDiceWrapper(rolled, modStore));
-  }, []);
+      addRolledDice(addRolledDiceWrapper(rolled, modStore));
+    }
+
+    setDice(historyStore[historyStore.length - 1]?.value);
+  }, [historyStore, modStore]);
 
   const renderSide = (value: number, key: number): JSX.Element | null => {
     switch (value) {
