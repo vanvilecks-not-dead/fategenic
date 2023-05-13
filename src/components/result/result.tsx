@@ -7,7 +7,10 @@ import clsx from "clsx";
 
 const Result = () => {
   const [total, setTotal] = useState<number>(0);
+  const [totalMod, setTotalMod] = useState<number>(0);
   const [description, setDescription] = useState<string>("");
+  const [totalMessage, setTotalMessage] = useState<string>("");
+  const [modMessage, setmodMessage] = useState<string>("");
 
   const history = useStore($history);
   const modifierStore = useStore($modifierStore);
@@ -15,14 +18,16 @@ const Result = () => {
 
   useEffect(() => {
     if (currentRoll) {
-      setTotal(currentRoll.result + modifierStore);
-      setDescription(getDescription(currentRoll.value, modifierStore));
+      setTotal(currentRoll.result + currentRoll.modifier);
+      setTotalMod(currentRoll.modifier);
+      setDescription(getDescription(currentRoll.value, currentRoll.modifier));
     }
-  }, [currentRoll, modifierStore]);
+  }, [currentRoll, modifierStore, totalMod]);
 
-  const totalMessage = total > 0 ? `+${total}` : `${total}`;
-  const modMessage =
-    modifierStore > 0 ? `+${modifierStore}` : `${modifierStore}`;
+  useEffect(() => {
+    setTotalMessage(total > 0 ? `+${total}` : `${total}`);
+    setmodMessage(totalMod > 0 ? `+${totalMod}` : `${totalMod}`);
+  }, [currentRoll, modifierStore, totalMod, total]);
 
   const getTextColor = () => {
     if (total == 0) {

@@ -3,7 +3,8 @@ import { $history } from "@/store/store";
 import { useStore } from "effector-react";
 const History = () => {
   const history = useStore($history);
-  const reverseHistory = history.slice(1).reverse();
+  const reverseHistory = history.slice().reverse();
+
   return (
     <div className="w-full pt-5">
       <div className="mb-4 text-center text-xl font-bold uppercase leading-9 text-deep-green md:text-start">

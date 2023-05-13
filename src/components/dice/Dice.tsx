@@ -3,29 +3,21 @@ import Empty from "./images/empty.inline.svg";
 import Minus from "./images/minus.inline.svg";
 import Plus from "./images/plus.inline.svg";
 import { rollFateDice } from "@/shared/rollDice";
-import { $modifierStore } from "@/store/modifierStore";
+import { $modifierStore, setModifier } from "@/store/modifierStore";
 import { useStore } from "effector-react";
-import { $history, RolledDice, addRolledDice } from "@/store/store";
+import { $history, addRolledDice } from "@/store/store";
+import { addRolledDiceWrapper } from "@/shared/addRolledDiceWrapper";
 
 const Dice = () => {
-  const addRolledDiceWrapper = (values: number[], mod: number): RolledDice => {
-    return {
-      value: values,
-      modifier: mod,
-      result: values.reduce((acc, number) => acc + number, 0) + mod,
-    };
-  };
-
   const [dice, setDice] = useState<number[]>([]);
   const modStore = useStore($modifierStore);
   const historyStore = useStore($history);
 
   useEffect(() => {
     if (historyStore.length == 0) {
-      const rolled = rollFateDice(4);
-      setDice(rolled);
-
-      addRolledDice(addRolledDiceWrapper(rolled, modStore));
+      const rolled = addRolledDiceWrapper();
+      setDice(rolled.value);
+      addRolledDice(addRolledDiceWrapper());
     }
 
     setDice(historyStore[historyStore.length - 1]?.value);
@@ -47,9 +39,10 @@ const Dice = () => {
   };
 
   const onClickDiceWrapper = () => {
-    const rolled = rollFateDice(4);
-    addRolledDice(addRolledDiceWrapper(rolled, modStore));
-    setDice(rolled);
+    const rolled = addRolledDiceWrapper();
+    addRolledDice(rolled);
+    setDice(rolled.value);
+    setModifier(0);
   };
 
   return (

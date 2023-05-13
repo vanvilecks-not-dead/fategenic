@@ -1,22 +1,11 @@
-import { rollFateDice } from "@/shared/rollDice";
-import { $modifierStore } from "@/store/modifierStore";
-import { RolledDice, addRolledDice } from "@/store/store";
-import { useStore } from "effector-react";
-
-const addRolledDiceWrapper = (values: number[], mod: number): RolledDice => {
-  return {
-    value: values,
-    modifier: mod,
-    result: values.reduce((acc, number) => acc + number, 0) + mod,
-  };
-};
+import { addRolledDiceWrapper } from "@/shared/addRolledDiceWrapper";
+import { setModifier } from "@/store/modifierStore";
+import { addRolledDice } from "@/store/store";
 
 const RollButton = () => {
-  const modStore = useStore($modifierStore);
-
   const onClickDiceWrapper = () => {
-    const rolled = rollFateDice(4);
-    addRolledDice(addRolledDiceWrapper(rolled, modStore));
+    addRolledDice(addRolledDiceWrapper());
+    setModifier(0);
   };
 
   return (

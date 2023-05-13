@@ -15,9 +15,10 @@ $history.on(addRolledDice, (state, payload) => [...state, payload]);
 
 $history.on(addModifierInHistory, (state, payload) => {
   const latestItem = state[state.length - 1];
+  const newState = state.slice();
   latestItem.modifier = payload;
-  state.pop();
-  return [...state, latestItem];
+  newState.pop();
+  return [...newState, latestItem];
 });
 
 export { addRolledDice, addModifierInHistory, $history };
