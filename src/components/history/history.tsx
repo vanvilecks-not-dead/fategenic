@@ -1,5 +1,6 @@
 import { getDescription } from "@/shared/values-description";
 import { $history } from "@/store/store";
+import clsx from "clsx";
 import { useStore } from "effector-react";
 const History = () => {
   const history = useStore($history);
@@ -10,14 +11,16 @@ const History = () => {
       <div className="mb-4 text-center text-xl font-bold uppercase leading-9 text-deep-green md:text-start">
         Roll history
       </div>
-      <ul className="mx-auto h-[40vh] overflow-y-scroll scrollbar-hide lg:text-start">
+      <ul className="h-[40vh] overflow-y-scroll text-center scrollbar-hide lg:text-start">
         {reverseHistory.map((item, index) => {
           return (
             <li
               key={index}
               className="mb-4 block font-normal leading-9 text-deep-green"
             >
-              <span>
+              <span
+                className={clsx(item.result + item.modifier == 0 && "pl-1")}
+              >
                 {item.result + item.modifier > 0 && "+"}
                 {item.result + item.modifier}{" "}
               </span>

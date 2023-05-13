@@ -21,7 +21,7 @@ export default function Home() {
             <RollButton />
           </div>
         </div>
-        <div className="flex flex-col justify-between gap-7 md:flex-row">
+        <div className="flex flex-col items-center justify-between gap-7 md:flex-row">
           <History />
           <Graph />
         </div>
