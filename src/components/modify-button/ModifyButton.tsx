@@ -21,7 +21,7 @@ const MinusModifierButton = ({ onClick }: { onClick: () => void }) => {
 const TextModifierButton = () => {
   return (
     <div className="mx-2.5 flex w-34 items-center justify-center bg-light-green px-3 py-5 text-center">
-      <span className="text-base font-bold uppercase leading-6 text-deep-green">
+      <span className="select-none text-base font-bold uppercase leading-6 text-deep-green">
         Modify roll
       </span>
     </div>
