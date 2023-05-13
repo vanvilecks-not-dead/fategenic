@@ -31,11 +31,11 @@ const Result = () => {
 
   const getTextColor = () => {
     if (total == 0) {
-      return "text-deep-green";
+      return "text-deep-green dark:dark-deep-green";
     } else if (total < 0) {
-      return "text-red";
+      return "text-red dark:text-dark-red";
     } else {
-      return "text-green";
+      return "text-green dark:text-dark-green";
     }
   };
 
@@ -43,7 +43,7 @@ const Result = () => {
     <div
       className={clsx(
         getTextColor(),
-        "max-w-[300px] select-none text-center  text-deep-green md:min-w-[300px]"
+        "max-w-[300px] select-none text-center text-deep-green  dark:text-dark-deep-green md:min-w-[300px]"
       )}
     >
       <div className="text-[60px] font-bold md:text-[96px]">{totalMessage}</div>

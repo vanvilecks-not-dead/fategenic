@@ -29,9 +29,13 @@ module.exports = {
       blue: "#2DB0CD",
       blue2: "#30B9D7",
       green: "#13839C",
+      "dark-deep-green": "#C0DDE3",
+      "dark-red": "#A54D4D",
+      "dark-green": "#3AD2B7",
       red: "#5A0F0F",
       "win-green": "#139C9C",
       "light-green": "rgba(19, 131, 156, 0.2)",
+      "d-light-green": "rgba(19, 131, 156, 0.6)",
       "deep-green": "#062B33",
     }),
 

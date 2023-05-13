@@ -10,11 +10,11 @@ const RollButton = () => {
 
   return (
     <button
-      className="mt-8.5 flex h-20 w-48 flex-row items-center justify-center rounded-3xl bg-green text-center sm:w-60 sm:justify-self-center md:w-full"
+      className="mt-8.5 flex h-20 w-full flex-row items-center justify-center rounded-3xl bg-green text-center sm:w-60 sm:justify-self-center md:w-full"
       type="button"
       onClick={onClickDiceWrapper}
     >
-      <span className="text-2xl font-bold uppercase leading-9 text-white">
+      <span className="text-2xl font-bold uppercase leading-9 text-white dark:text-dark-deep-green">
         Roll again
       </span>
     </button>
