@@ -46,12 +46,12 @@ const Result = () => {
         "max-w-[300px] select-none text-center  text-deep-green md:min-w-[300px]"
       )}
     >
-      <div className="text-[96px] font-bold">{totalMessage}</div>
-      <span className="mt-2 text-4xl font-bold uppercase leading-10">
+      <div className="text-[60px] font-bold md:text-[96px]">{totalMessage}</div>
+      <span className="mt-2 text-2xl font-bold uppercase leading-10 lg:text-4xl">
         {description}
       </span>
 
-      <div className="pt-4 text-2xl font-normal leading-9 lg:h-7">
+      <div className="my-2 h-7 text-base font-normal leading-9 lg:my-4 lg:h-7 lg:text-2xl">
         {modifierStore !== 0 && <span>modified by {modMessage}</span>}
       </div>
     </div>

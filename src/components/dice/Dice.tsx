@@ -24,7 +24,8 @@ const Dice = () => {
   }, [historyStore, modStore]);
 
   const renderSide = (value: number, key: number): JSX.Element | null => {
-    const css = "w-28 h-28 sm:h-28 sm:w-28 lg:h-34 lg:w-34 xl:h-48 xl:w-48";
+    const css =
+      "w-20 rounded-xl h-20 sm:h-20 sm:w-20 lg:h-34 lg:w-34 xl:h-48 xl:w-48";
 
     switch (value) {
       case -1:

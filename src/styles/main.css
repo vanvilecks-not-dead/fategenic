@@ -3,14 +3,8 @@
 @tailwind utilities;
 
 .dice-wrapper {
-  display: grid;
+  @apply grid h-min w-min items-center justify-items-center gap-2.5 md:gap-4;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 1rem;
-  height: min-content;
-  width: min-content;
-  justify-items: center;
-  align-items: center;
-  margin: 1rem;
 }
 
 .dice-wrapper:nth-child(even) {

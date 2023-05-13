@@ -8,7 +8,7 @@ const History = () => {
 
   return (
     <div className="w-full pt-5">
-      <div className="mb-4 text-center text-xl font-bold uppercase leading-9 text-deep-green md:text-start">
+      <div className="mb-4 text-center text-xl font-bold uppercase leading-9 text-deep-green lg:text-start">
         Roll history
       </div>
       <ul className="h-[40vh] overflow-y-scroll text-center scrollbar-hide lg:text-start">
@@ -21,14 +21,24 @@ const History = () => {
               <span
                 className={clsx(item.result + item.modifier == 0 && "pl-1")}
               >
-                {item.result + item.modifier > 0 && "+"}
-                {item.result + item.modifier}{" "}
+                {item.result > 0 && "+"}
+                {item.result}{" "}
               </span>
               <span className="uppercase">
-                [{getDescription(item.value, item.modifier)}]
+                [{getDescription(item.value, 0)}]
               </span>{" "}
               <span>
-                {item.modifier !== 0 && <span>mod.to {item.modifier}</span>}
+                {item.modifier !== 0 && (
+                  <>
+                    <span>
+                      mod.to {item.result + item.modifier > 0 && "+"}
+                      {item.modifier + item.result}
+                    </span>{" "}
+                    <span className="uppercase">
+                      [{getDescription(item.value, item.modifier)}]
+                    </span>
+                  </>
+                )}
               </span>
             </li>
           );
