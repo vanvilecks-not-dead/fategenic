@@ -39,9 +39,9 @@ const Graph = () => {
           <Line
             type="monotone"
             dataKey="res"
-            stroke="#8884d8"
+            stroke="#13839C"
             strokeWidth={2}
-            fill="#8884d8"
+            fill="#13839C"
           />
         </LineChart>
       </ResponsiveContainer>

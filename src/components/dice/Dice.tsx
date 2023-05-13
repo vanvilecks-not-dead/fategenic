@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 import Empty from "./images/empty.inline.svg";
 import Minus from "./images/minus.inline.svg";
 import Plus from "./images/plus.inline.svg";
-import { rollFateDice } from "@/shared/rollDice";
 import { $modifierStore, setModifier } from "@/store/modifierStore";
 import { useStore } from "effector-react";
 import { $history, addRolledDice } from "@/store/store";
