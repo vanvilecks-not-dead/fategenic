@@ -14,7 +14,7 @@ const RollButton = () => {
       type="button"
       onClick={onClickDiceWrapper}
     >
-      <span className="animate-pulse text-2xl font-bold uppercase leading-9 text-white">
+      <span className="text-2xl font-bold uppercase leading-9 text-white">
         Roll again
       </span>
     </button>

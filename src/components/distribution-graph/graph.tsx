@@ -19,7 +19,6 @@ const Graph = () => {
     };
   });
   const yAxisTickValues = [-4, -3, -2, -1, 0, 1, 2, 3, 4];
-  const xAxisTickValues = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
   return (
     <div className="hidden self-center  lg:block">
       <ResponsiveContainer width={300} height={250}>
@@ -35,7 +34,7 @@ const Graph = () => {
         >
           <CartesianGrid strokeDasharray="3 3" spacing={1} />
           <YAxis type="number" interval={0} ticks={yAxisTickValues} />
-          <XAxis dataKey="x" interval={0} ticks={xAxisTickValues} />
+          <XAxis dataKey="x" interval={0} />
           <Line
             type="monotone"
             dataKey="res"
