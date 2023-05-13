@@ -1,4 +1,5 @@
 import { createEvent, createStore } from "effector";
+import connectLocalStorage from "effector-localstorage";
 
 export interface RolledDice {
   value: number[];
@@ -9,9 +10,12 @@ export interface RolledDice {
 const addRolledDice = createEvent<RolledDice>();
 const addModifierInHistory = createEvent<number>();
 
-const $history = createStore<RolledDice[]>([]);
+const localStorageHistory = connectLocalStorage("history");
 
+const $history = createStore<RolledDice[]>(localStorageHistory.init() || []);
 $history.on(addRolledDice, (state, payload) => [...state, payload]);
+
+$history.watch(localStorageHistory);
 
 $history.on(addModifierInHistory, (state, payload) => {
   const latestItem = state[state.length - 1];

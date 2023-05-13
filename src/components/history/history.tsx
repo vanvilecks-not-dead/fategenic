@@ -1,3 +1,4 @@
+"use client";
 import { getDescription } from "@/shared/values-description";
 import { $history } from "@/store/store";
 import clsx from "clsx";
