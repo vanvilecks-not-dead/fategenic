@@ -1,14 +1,30 @@
 import { ImageResponse } from "@vercel/og";
 import { NextRequest } from "next/server";
-export const runtime = "experimental-edge";
+import fs from "fs";
+import { fileURLToPath } from "url";
+import path from "path";
 
-const Mplus1RegularFontP = fetch(
-  new URL("public/fonts/MPLUS1p-Regular.ttf", import.meta.url)
-).then((res) => res.arrayBuffer());
+const Mplus1RegularFontP = fs.promises.readFile(
+  path.join(
+    fileURLToPath(import.meta.url),
+    "../../../../../public/fonts/MPLUS1p-Regular.ttf"
+  )
+);
 
-const Mplus1RegularFontBoldP = fetch(
-  new URL("public/fonts/MPLUS1p-Bold.ttf", import.meta.url)
-).then((res) => res.arrayBuffer());
+const Mplus1RegularFontBoldP = fs.promises.readFile(
+  path.join(
+    fileURLToPath(import.meta.url),
+    "../../../../../public/fonts/MPLUS1p-Bold.ttf"
+  )
+);
+
+// const Mplus1RegularFontP = fetch(
+//   new URL("public/fonts/MPLUS1p-Regular.ttf", import.meta.url)
+// ).then((res) => res.arrayBuffer());
+
+// const Mplus1RegularFontBoldP = fetch(
+//   new URL("public/fonts/MPLUS1p-Bold.ttf", import.meta.url)
+// ).then((res) => res.arrayBuffer());
 
 export async function GET(request: NextRequest) {
   const [Mplus1RegularFont, Mplus1RegularFontBold] = await Promise.all([
