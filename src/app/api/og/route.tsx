@@ -1,15 +1,15 @@
 import { ImageResponse } from "@vercel/og";
 import { NextRequest } from "next/server";
 import fs from "fs";
-import { fileURLToPath } from "url";
 import path from "path";
+import { fileURLToPath } from "url";
 
 const Mplus1RegularFontP = fs.promises.readFile(
-  path.join(process.cwd(), "public/fonts/MPLUS1p-Regular.ttf")
+  path.join(fileURLToPath(import.meta.url), "../../fonts/MPLUS1p-Regular.ttf")
 );
 
 const Mplus1RegularFontBoldP = fs.promises.readFile(
-  path.join(process.cwd(), "public/fonts/MPLUS1p-Bold.ttf")
+  path.join(fileURLToPath(import.meta.url), "../../fonts/MPLUS1p-Bold.ttf")
 );
 
 export async function GET(request: NextRequest) {
