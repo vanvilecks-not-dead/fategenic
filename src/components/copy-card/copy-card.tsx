@@ -62,7 +62,7 @@ function CopyCard() {
       >
         <CopyIcon width={48} height={48} />
         {clicked && (
-          <span className="text-base font-bold uppercase leading-6">
+          <span className="text-base  font-bold uppercase leading-6 text-green dark:text-light-deep-green">
             Copied!
           </span>
         )}

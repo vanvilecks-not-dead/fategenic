@@ -14,7 +14,7 @@
 .result:hover .copy-card {
   opacity: 100;
   transition: opacity 0.5s ease-in-out;
-  @apply fill-green;
+  @apply fill-green dark:fill-light-deep-green;
 }
 
 .copy-card {

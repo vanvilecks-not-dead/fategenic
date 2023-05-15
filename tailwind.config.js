@@ -37,6 +37,7 @@ module.exports = {
       "light-green": "rgba(19, 131, 156, 0.2)",
       "d-light-green": "rgba(19, 131, 156, 0.6)",
       "deep-green": "#062B33",
+      "light-deep-green": "#C6DCEB",
     }),
 
     extend: {
