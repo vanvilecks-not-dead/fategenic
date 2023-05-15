@@ -1,5 +1,6 @@
 "use client";
 
+import { CopyCard } from "@/components/copy-card/copy-card";
 import { Dice } from "@/components/dice";
 import { Graph } from "@/components/distribution-graph";
 import { History } from "@/components/history";

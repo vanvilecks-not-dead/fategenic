@@ -4,6 +4,7 @@ import { $modifierStore } from "@/store/modifierStore";
 import { $history } from "@/store/store";
 import { getDescription } from "@/shared/values-description";
 import clsx from "clsx";
+import { CopyCard } from "../copy-card";
 
 const Result = () => {
   const [total, setTotal] = useState<number>(0);
@@ -43,9 +44,10 @@ const Result = () => {
     <div
       className={clsx(
         getTextColor(),
-        "max-w-[300px] select-none text-center text-deep-green  dark:text-dark-deep-green md:min-w-[300px]"
+        "result relative max-w-[300px] select-none text-center text-deep-green  dark:text-dark-deep-green md:min-w-[300px]"
       )}
     >
+      <CopyCard />
       <div className="text-[60px] font-bold md:text-[96px]">{totalMessage}</div>
       <span className="mt-2 text-2xl font-bold uppercase leading-10 lg:text-4xl">
         {description}

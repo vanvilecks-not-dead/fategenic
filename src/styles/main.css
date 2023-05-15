@@ -10,3 +10,13 @@
 .dice-wrapper:nth-child(even) {
   justify-self: end;
 }
+
+.result:hover .copy-card {
+  opacity: 100;
+  transition: opacity 0.5s ease-in-out;
+  @apply fill-green;
+}
+
+.copy-card {
+  opacity: 0;
+}
