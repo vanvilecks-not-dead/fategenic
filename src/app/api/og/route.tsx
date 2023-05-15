@@ -5,14 +5,11 @@ import { fileURLToPath } from "url";
 import path from "path";
 
 const Mplus1RegularFontP = fs.promises.readFile(
-  path.join(
-    fileURLToPath(import.meta.url),
-    "@/public/fonts/MPLUS1p-Regular.ttf"
-  )
+  path.join(fileURLToPath(import.meta.url), "../fonts/MPLUS1p-Regular.ttf")
 );
 
 const Mplus1RegularFontBoldP = fs.promises.readFile(
-  path.join(fileURLToPath(import.meta.url), "@/public/fonts/MPLUS1p-Bold.ttf")
+  path.join(fileURLToPath(import.meta.url), "../fonts/MPLUS1p-Bold.ttf")
 );
 
 // const Mplus1RegularFontP = fetch(
