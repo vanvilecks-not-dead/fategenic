@@ -48,6 +48,12 @@ type RootLayoutProps = {
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="en">
+      <head>
+        <meta
+          name="google-site-verification"
+          content="fz_uFKIXypfGpQ0fRdf3u97dMQugheBmymlPg7fuApc"
+        />
+      </head>
       <body
         className={`${font.variable} px-safe overflow-auto bg-white px-10 pt-10 font-sans dark:bg-black  md:pt-24 lg:overflow-hidden`}
       >
