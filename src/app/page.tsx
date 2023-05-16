@@ -11,7 +11,7 @@ import { Analytics } from "@vercel/analytics/react";
 export default function Home() {
   return (
     <>
-      <div className="flex flex-col sm:flex-col lg:flex-row lg:justify-between">
+      <div className="flex flex-col sm:flex-col lg:flex-row lg:justify-evenly">
         <div className="flex h-full justify-center sm:items-center sm:justify-center lg:justify-normal">
           <Dice />
         </div>
