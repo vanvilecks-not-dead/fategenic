@@ -22,6 +22,12 @@ const Dice = () => {
     setDice(historyStore[historyStore.length - 1]?.value);
   }, [historyStore, modStore]);
 
+  useEffect(() => {
+    const rolled = addRolledDiceWrapper();
+    setDice(rolled.value);
+    addRolledDice(rolled);
+  }, []);
+
   const renderSide = (value: number, key: number): JSX.Element | null => {
     const css =
       "w-20 rounded-xl h-20 sm:h-20 sm:w-20 lg:h-34 lg:w-34 xl:h-48 xl:w-48";
