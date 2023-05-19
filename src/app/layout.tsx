@@ -10,7 +10,9 @@ const font = M_PLUS_1({
 
 export const metadata = {
   title: "Fategenic",
-  description: "dice roller",
+  description:
+    "Fategenic is a tool designed to help Fate game players easily roll and modify Fate dice rolls, and also keep a record of their roll data history.",
+
   icons: {
     icon: "/favicon/favicon-32x32.png",
     apple: [
