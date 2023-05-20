@@ -123,7 +123,7 @@ export async function GET(request: NextRequest) {
     (
       <div
         style={{
-          fontFamily: "'M PLUS 1'",
+          fontFamily: "M PLUS 1",
           height: 420,
           width: 420,
           display: "flex",
