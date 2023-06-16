@@ -50,10 +50,7 @@ function CopyCard() {
   return (
     <div>
       <button
-        className={clsx(
-          clicked ? "right-[-50px]" : "right-0",
-          "copy-card absolute top-0 z-10 flex flex-row p-2"
-        )}
+        className="copy-card absolute right-[-150px] top-0 z-10 flex flex-row p-2 md:right-[-50px]"
         type="button"
         onClick={() => {
           setClicked(true);
@@ -61,11 +58,9 @@ function CopyCard() {
         }}
       >
         <CopyIcon width={48} height={48} />
-        {clicked && (
-          <span className="text-base  font-bold uppercase leading-6 text-green dark:text-light-deep-green">
-            Copied!
-          </span>
-        )}
+        <span className="text-base font-bold uppercase leading-6 text-green dark:text-light-deep-green">
+          {clicked ? "Copied!" : "Copy"}
+        </span>
       </button>
     </div>
   );

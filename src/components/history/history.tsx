@@ -12,7 +12,7 @@ const History = () => {
       <div className="mb-4 text-center text-xl font-bold uppercase leading-9 text-deep-green dark:text-dark-deep-green lg:text-start">
         Roll history
       </div>
-      <ul className=" h-[20vh] overflow-y-scroll text-center scrollbar-hide md:h-[40vh] lg:text-start">
+      <ul className=" text-center md:h-[40vh] md:overflow-y-scroll md:scrollbar-hide lg:text-start">
         {reverseHistory.map((item, index) => {
           return (
             <li
