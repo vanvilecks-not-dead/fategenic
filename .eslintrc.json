@@ -1,73 +1,73 @@
-{
-  "env": {
-    "browser": true,
-    "es2021": true,
-    "node": true
-  },
-  "extends": [
-    "plugin:react/recommended",
-    "plugin:@typescript-eslint/recommended",
-    "next",
-    "plugin:prettier/recommended"
-  ],
-  "parserOptions": {
-    "ecmaFeatures": {
-      "jsx": true
-    },
-    "ecmaVersion": 12,
-    "sourceType": "module"
-  },
-  "parser": "@typescript-eslint/parser",
-  "plugins": [
-    "react",
-    "prettier",
-    "@typescript-eslint"
-  ],
-  "rules": {
-    "prettier/prettier": [
-      "error",
-      {},
-      {
-        "usePrettierrc": false
-      }
-    ],
-    "react/jsx-filename-extension": [
-      2,
-      {
-        "extensions": [
-          ".js",
-          ".jsx",
-          ".ts",
-          ".tsx"
-        ]
-      }
-    ],
-    "no-plusplus": "off",
-    "import/no-extraneous-dependencies": "off",
-    "class-methods-use-this": "off",
-    "import/prefer-default-export": "off",
-    "no-param-reassign": "warn",
-    "consistent-return": "warn",
-    "no-underscore-dangle": "off",
-    "no-bitwise": "warn",
-    "no-nested-ternary": "off",
-    "no-use-before-define": "warn",
-    "import/extensions": [
-      "error",
-      "ignorePackages",
-      {
-        "js": "never",
-        "jsx": "never",
-        "ts": "never",
-        "tsx": "never"
-      }
-    ],
-    "overrides": "off"
-  },
-  "ignorePatterns": [
-    "node_modules/",
-    "tailwind.config.js",
-    "postcss.config.js",
-    "next.config.js"
-  ]
-}
+// {
+//   "env": {
+//     "browser": true,
+//     "es2021": true,
+//     "node": true
+//   },
+//   "extends": [
+//     "plugin:react/recommended",
+//     "plugin:@typescript-eslint/recommended",
+//     "next",
+//     "plugin:prettier/recommended"
+//   ],
+//   "parserOptions": {
+//     "ecmaFeatures": {
+//       "jsx": true
+//     },
+//     "ecmaVersion": 12,
+//     "sourceType": "module"
+//   },
+//   "parser": "@typescript-eslint/parser",
+//   "plugins": [
+//     "react",
+//     "prettier",
+//     "@typescript-eslint"
+//   ],
+//   "rules": {
+//     "prettier/prettier": [
+//       "error",
+//       {},
+//       {
+//         "usePrettierrc": false
+//       }
+//     ],
+//     "react/jsx-filename-extension": [
+//       2,
+//       {
+//         "extensions": [
+//           ".js",
+//           ".jsx",
+//           ".ts",
+//           ".tsx"
+//         ]
+//       }
+//     ],
+//     "no-plusplus": "off",
+//     "import/no-extraneous-dependencies": "off",
+//     "class-methods-use-this": "off",
+//     "import/prefer-default-export": "off",
+//     "no-param-reassign": "warn",
+//     "consistent-return": "warn",
+//     "no-underscore-dangle": "off",
+//     "no-bitwise": "warn",
+//     "no-nested-ternary": "off",
+//     "no-use-before-define": "warn",
+//     "import/extensions": [
+//       "error",
+//       "ignorePackages",
+//       {
+//         "js": "never",
+//         "jsx": "never",
+//         "ts": "never",
+//         "tsx": "never"
+//       }
+//     ],
+//     "overrides": "off"
+//   },
+//   "ignorePatterns": [
+//     "node_modules/",
+//     "tailwind.config.js",
+//     "postcss.config.js",
+//     "next.config.js"
+//   ]
+// }

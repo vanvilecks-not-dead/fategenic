@@ -1,12 +1,12 @@
 "use client";
 
-import { Dice } from "@/components/dice";
-import { Graph } from "@/components/distribution-graph";
-import { History } from "@/components/history";
-import { ModifyButton } from "@/components/modify-button";
-import { Result } from "@/components/result";
-import { RollButton } from "@/components/roll-again-button";
-import { Analytics } from "@vercel/analytics/react";
+// import { Dice } from "@/components/dice";
+// import { Graph } from "@/components/distribution-graph";
+// import { History } from "@/components/history";
+// import { ModifyButton } from "@/components/modify-button";
+// import { Result } from "@/components/result";
+// import { RollButton } from "@/components/roll-again-button";
+// import { Analytics } from "@vercel/analytics/react";
 
 export default function Home() {
   return (
@@ -91,8 +91,6 @@ export default function Home() {
         Test Test Test Test Test Test Test Test Test Test Test Test Test Test
         Test Test Test Test Test Test Test Test Test Test Test Test Test Test
         Test Test Test Test Test Test Test Test Test Test Test Test Test Test
-        Test
-
         Test Test Test Test Test Test Test Test Test Test Test Test Test Test
         Test Test Test Test Test Test Test Test Test Test Test Test Test Test
         Test Test Test Test Test Test Test Test Test Test Test Test Test Test
@@ -172,7 +170,6 @@ export default function Home() {
         Test Test Test Test Test Test Test Test Test Test Test Test Test Test
         Test Test Test Test Test Test Test Test Test Test Test Test Test Test
         Test Test Test Test Test Test Test Test Test Test Test Test Test Test
-        Test
         Test Test Test Test Test Test Test Test Test Test Test Test Test Test
         Test Test Test Test Test Test Test Test Test Test Test Test Test Test
         Test Test Test Test Test Test Test Test Test Test Test Test Test Test
@@ -252,7 +249,6 @@ export default function Home() {
         Test Test Test Test Test Test Test Test Test Test Test Test Test Test
         Test Test Test Test Test Test Test Test Test Test Test Test Test Test
         Test Test Test Test Test Test Test Test Test Test Test Test Test Test
-        Test
         Test Test Test Test Test Test Test Test Test Test Test Test Test Test
         Test Test Test Test Test Test Test Test Test Test Test Test Test Test
         Test Test Test Test Test Test Test Test Test Test Test Test Test Test
@@ -332,7 +328,6 @@ export default function Home() {
         Test Test Test Test Test Test Test Test Test Test Test Test Test Test
         Test Test Test Test Test Test Test Test Test Test Test Test Test Test
         Test Test Test Test Test Test Test Test Test Test Test Test Test Test
-        Test
         Test Test Test Test Test Test Test Test Test Test Test Test Test Test
         Test Test Test Test Test Test Test Test Test Test Test Test Test Test
         Test Test Test Test Test Test Test Test Test Test Test Test Test Test
@@ -412,7 +407,6 @@ export default function Home() {
         Test Test Test Test Test Test Test Test Test Test Test Test Test Test
         Test Test Test Test Test Test Test Test Test Test Test Test Test Test
         Test Test Test Test Test Test Test Test Test Test Test Test Test Test
-        Test
         Test Test Test Test Test Test Test Test Test Test Test Test Test Test
         Test Test Test Test Test Test Test Test Test Test Test Test Test Test
         Test Test Test Test Test Test Test Test Test Test Test Test Test Test
@@ -492,7 +486,6 @@ export default function Home() {
         Test Test Test Test Test Test Test Test Test Test Test Test Test Test
         Test Test Test Test Test Test Test Test Test Test Test Test Test Test
         Test Test Test Test Test Test Test Test Test Test Test Test Test Test
-        Test
         Test Test Test Test Test Test Test Test Test Test Test Test Test Test
         Test Test Test Test Test Test Test Test Test Test Test Test Test Test
         Test Test Test Test Test Test Test Test Test Test Test Test Test Test
@@ -572,7 +565,6 @@ export default function Home() {
         Test Test Test Test Test Test Test Test Test Test Test Test Test Test
         Test Test Test Test Test Test Test Test Test Test Test Test Test Test
         Test Test Test Test Test Test Test Test Test Test Test Test Test Test
-        Test
         Test Test Test Test Test Test Test Test Test Test Test Test Test Test
         Test Test Test Test Test Test Test Test Test Test Test Test Test Test
         Test Test Test Test Test Test Test Test Test Test Test Test Test Test
@@ -652,7 +644,6 @@ export default function Home() {
         Test Test Test Test Test Test Test Test Test Test Test Test Test Test
         Test Test Test Test Test Test Test Test Test Test Test Test Test Test
         Test Test Test Test Test Test Test Test Test Test Test Test Test Test
-        Test
         Test Test Test Test Test Test Test Test Test Test Test Test Test Test
         Test Test Test Test Test Test Test Test Test Test Test Test Test Test
         Test Test Test Test Test Test Test Test Test Test Test Test Test Test
@@ -732,7 +723,6 @@ export default function Home() {
         Test Test Test Test Test Test Test Test Test Test Test Test Test Test
         Test Test Test Test Test Test Test Test Test Test Test Test Test Test
         Test Test Test Test Test Test Test Test Test Test Test Test Test Test
-        Test
         Test Test Test Test Test Test Test Test Test Test Test Test Test Test
         Test Test Test Test Test Test Test Test Test Test Test Test Test Test
         Test Test Test Test Test Test Test Test Test Test Test Test Test Test
@@ -812,7 +802,6 @@ export default function Home() {
         Test Test Test Test Test Test Test Test Test Test Test Test Test Test
         Test Test Test Test Test Test Test Test Test Test Test Test Test Test
         Test Test Test Test Test Test Test Test Test Test Test Test Test Test
-        Test
         Test Test Test Test Test Test Test Test Test Test Test Test Test Test
         Test Test Test Test Test Test Test Test Test Test Test Test Test Test
         Test Test Test Test Test Test Test Test Test Test Test Test Test Test
@@ -892,7 +881,6 @@ export default function Home() {
         Test Test Test Test Test Test Test Test Test Test Test Test Test Test
         Test Test Test Test Test Test Test Test Test Test Test Test Test Test
         Test Test Test Test Test Test Test Test Test Test Test Test Test Test
-        Test
         Test Test Test Test Test Test Test Test Test Test Test Test Test Test
         Test Test Test Test Test Test Test Test Test Test Test Test Test Test
         Test Test Test Test Test Test Test Test Test Test Test Test Test Test
@@ -972,7 +960,6 @@ export default function Home() {
         Test Test Test Test Test Test Test Test Test Test Test Test Test Test
         Test Test Test Test Test Test Test Test Test Test Test Test Test Test
         Test Test Test Test Test Test Test Test Test Test Test Test Test Test
-        Test
         Test Test Test Test Test Test Test Test Test Test Test Test Test Test
         Test Test Test Test Test Test Test Test Test Test Test Test Test Test
         Test Test Test Test Test Test Test Test Test Test Test Test Test Test
@@ -1052,7 +1039,6 @@ export default function Home() {
         Test Test Test Test Test Test Test Test Test Test Test Test Test Test
         Test Test Test Test Test Test Test Test Test Test Test Test Test Test
         Test Test Test Test Test Test Test Test Test Test Test Test Test Test
-        Test
         Test Test Test Test Test Test Test Test Test Test Test Test Test Test
         Test Test Test Test Test Test Test Test Test Test Test Test Test Test
         Test Test Test Test Test Test Test Test Test Test Test Test Test Test
@@ -1132,7 +1118,6 @@ export default function Home() {
         Test Test Test Test Test Test Test Test Test Test Test Test Test Test
         Test Test Test Test Test Test Test Test Test Test Test Test Test Test
         Test Test Test Test Test Test Test Test Test Test Test Test Test Test
-        Test
         Test Test Test Test Test Test Test Test Test Test Test Test Test Test
         Test Test Test Test Test Test Test Test Test Test Test Test Test Test
         Test Test Test Test Test Test Test Test Test Test Test Test Test Test
@@ -1212,7 +1197,6 @@ export default function Home() {
         Test Test Test Test Test Test Test Test Test Test Test Test Test Test
         Test Test Test Test Test Test Test Test Test Test Test Test Test Test
         Test Test Test Test Test Test Test Test Test Test Test Test Test Test
-        Test
         Test Test Test Test Test Test Test Test Test Test Test Test Test Test
         Test Test Test Test Test Test Test Test Test Test Test Test Test Test
         Test Test Test Test Test Test Test Test Test Test Test Test Test Test
@@ -1292,7 +1276,6 @@ export default function Home() {
         Test Test Test Test Test Test Test Test Test Test Test Test Test Test
         Test Test Test Test Test Test Test Test Test Test Test Test Test Test
         Test Test Test Test Test Test Test Test Test Test Test Test Test Test
-        Test
         Test Test Test Test Test Test Test Test Test Test Test Test Test Test
         Test Test Test Test Test Test Test Test Test Test Test Test Test Test
         Test Test Test Test Test Test Test Test Test Test Test Test Test Test
@@ -1372,7 +1355,6 @@ export default function Home() {
         Test Test Test Test Test Test Test Test Test Test Test Test Test Test
         Test Test Test Test Test Test Test Test Test Test Test Test Test Test
         Test Test Test Test Test Test Test Test Test Test Test Test Test Test
-        Test
         Test Test Test Test Test Test Test Test Test Test Test Test Test Test
         Test Test Test Test Test Test Test Test Test Test Test Test Test Test
         Test Test Test Test Test Test Test Test Test Test Test Test Test Test
@@ -1452,7 +1434,6 @@ export default function Home() {
         Test Test Test Test Test Test Test Test Test Test Test Test Test Test
         Test Test Test Test Test Test Test Test Test Test Test Test Test Test
         Test Test Test Test Test Test Test Test Test Test Test Test Test Test
-        Test
         Test Test Test Test Test Test Test Test Test Test Test Test Test Test
         Test Test Test Test Test Test Test Test Test Test Test Test Test Test
         Test Test Test Test Test Test Test Test Test Test Test Test Test Test
@@ -1532,7 +1513,6 @@ export default function Home() {
         Test Test Test Test Test Test Test Test Test Test Test Test Test Test
         Test Test Test Test Test Test Test Test Test Test Test Test Test Test
         Test Test Test Test Test Test Test Test Test Test Test Test Test Test
-        Test
         Test Test Test Test Test Test Test Test Test Test Test Test Test Test
         Test Test Test Test Test Test Test Test Test Test Test Test Test Test
         Test Test Test Test Test Test Test Test Test Test Test Test Test Test
@@ -1612,7 +1592,6 @@ export default function Home() {
         Test Test Test Test Test Test Test Test Test Test Test Test Test Test
         Test Test Test Test Test Test Test Test Test Test Test Test Test Test
         Test Test Test Test Test Test Test Test Test Test Test Test Test Test
-        Test
         Test Test Test Test Test Test Test Test Test Test Test Test Test Test
         Test Test Test Test Test Test Test Test Test Test Test Test Test Test
         Test Test Test Test Test Test Test Test Test Test Test Test Test Test
@@ -1692,7 +1671,6 @@ export default function Home() {
         Test Test Test Test Test Test Test Test Test Test Test Test Test Test
         Test Test Test Test Test Test Test Test Test Test Test Test Test Test
         Test Test Test Test Test Test Test Test Test Test Test Test Test Test
-        Test
         Test Test Test Test Test Test Test Test Test Test Test Test Test Test
         Test Test Test Test Test Test Test Test Test Test Test Test Test Test
         Test Test Test Test Test Test Test Test Test Test Test Test Test Test
@@ -1772,7 +1750,6 @@ export default function Home() {
         Test Test Test Test Test Test Test Test Test Test Test Test Test Test
         Test Test Test Test Test Test Test Test Test Test Test Test Test Test
         Test Test Test Test Test Test Test Test Test Test Test Test Test Test
-        Test
         Test Test Test Test Test Test Test Test Test Test Test Test Test Test
         Test Test Test Test Test Test Test Test Test Test Test Test Test Test
         Test Test Test Test Test Test Test Test Test Test Test Test Test Test
@@ -1852,7 +1829,6 @@ export default function Home() {
         Test Test Test Test Test Test Test Test Test Test Test Test Test Test
         Test Test Test Test Test Test Test Test Test Test Test Test Test Test
         Test Test Test Test Test Test Test Test Test Test Test Test Test Test
-        Test
         Test Test Test Test Test Test Test Test Test Test Test Test Test Test
         Test Test Test Test Test Test Test Test Test Test Test Test Test Test
         Test Test Test Test Test Test Test Test Test Test Test Test Test Test
@@ -1932,7 +1908,6 @@ export default function Home() {
         Test Test Test Test Test Test Test Test Test Test Test Test Test Test
         Test Test Test Test Test Test Test Test Test Test Test Test Test Test
         Test Test Test Test Test Test Test Test Test Test Test Test Test Test
-        Test
         Test Test Test Test Test Test Test Test Test Test Test Test Test Test
         Test Test Test Test Test Test Test Test Test Test Test Test Test Test
         Test Test Test Test Test Test Test Test Test Test Test Test Test Test
@@ -2012,7 +1987,6 @@ export default function Home() {
         Test Test Test Test Test Test Test Test Test Test Test Test Test Test
         Test Test Test Test Test Test Test Test Test Test Test Test Test Test
         Test Test Test Test Test Test Test Test Test Test Test Test Test Test
-        Test
         Test Test Test Test Test Test Test Test Test Test Test Test Test Test
         Test Test Test Test Test Test Test Test Test Test Test Test Test Test
         Test Test Test Test Test Test Test Test Test Test Test Test Test Test
@@ -2092,8 +2066,8 @@ export default function Home() {
         Test Test Test Test Test Test Test Test Test Test Test Test Test Test
         Test Test Test Test Test Test Test Test Test Test Test Test Test Test
         Test Test Test Test Test Test Test Test Test Test Test Test Test Test
-        Test
-        
+        Test Test Test Test Test Test Test Test Test Test Test Test Test Test
+        Test Test Test Test Test Test Test Test Test Test Test Test
       </div>
 
       {/* <div className="flex flex-col sm:flex-col lg:flex-row lg:justify-evenly">
